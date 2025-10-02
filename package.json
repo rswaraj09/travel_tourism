@@ -1,0 +1,30 @@
+{
+  "name": "travel-tourism-platform",
+  "version": "1.0.0",
+  "description": "A full-featured travel and tourism website with AI chatbot integration",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "travel",
+    "tourism",
+    "booking",
+    "ai-chatbot",
+    "react",
+    "nodejs"
+  ],
+  "author": "Travel Tourism Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
